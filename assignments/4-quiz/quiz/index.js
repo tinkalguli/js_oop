@@ -58,7 +58,6 @@ class Question {
         
         root.append(title, optionBox);
         optionBox.addEventListener("click", (event) => {
-            event.preventDefault();
             answerShowcase(event, optionBox, this);
             addScore(event, this)
         });

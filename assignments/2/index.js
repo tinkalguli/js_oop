@@ -102,7 +102,7 @@ personFromConstructor.prototype = {
   }
 }
 
-var mike = personFromConstructor('Mike', 30);
+var mike = new personFromConstructor('Mike', 30);
 
 
 // /********* Uncomment these lines to test your work! *********/
@@ -129,7 +129,7 @@ mike.introduce(); // -> Logs 'Hi, my name is Mike'
 
 class PersonClass {
 	constructor(name) {
-    this[`${name}`] = name;
+    this.name = name;
   }
   greet() {
     console.log("hello");
@@ -146,13 +146,20 @@ george.George;
 
 /*** CHALLENGE 2 of 3 ***/
 
-// add code here
+class DeveloperClass extends PersonClass {
+  constructor(name){
+    super(name);
+  }
+  introduce() {
+    console.log(`Hello World, my name is ${this.name}`);
+  }
+}
 
 
 // /********* Uncomment these lines to test your work! *********/
-// var thai = new DeveloperClass('Thai', 32);
-// console.log(thai.name); // -> Logs 'Thai'
-// thai.introduce(); //-> Logs 'Hello World, my name is Thai'
+var thai = new DeveloperClass('Thai', 32);
+console.log(thai.name); // -> Logs 'Thai'
+thai.introduce(); //-> Logs 'Hello World, my name is Thai'
 
 
 
