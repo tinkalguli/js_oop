@@ -140,8 +140,6 @@ class PersonClass {
 // /********* Uncomment this line to test your work! *********/
 var george = new PersonClass("George");
 george.greet(); // -> Logs 'hello'
-george.George;
-
 
 
 /*** CHALLENGE 2 of 3 ***/
