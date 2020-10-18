@@ -1,0 +1,76 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 2rem;
+}
+
+.quiz {
+    max-width: 60rem;
+    margin: 0 auto;
+}
+
+.score-div {
+    text-align: right;
+    margin-bottom: 1rem;
+    font-size: 2rem;
+}
+
+.btn-container {
+    text-align: right;
+    margin-top: 2rem;
+}
+
+#root {
+    flex: 0 1 70%;
+    padding: 2rem;
+    border: 1px solid #000;
+    border-radius: 0.5rem;
+}
+
+#btn-previous,
+#btn-next {
+    padding: 0.7rem 1.3rem;
+    font-size: 1.2rem;
+    border: 0;
+    border: 1px solid #4e4e4e;
+    border-radius: 5px;
+}
+
+#btn-next {
+    margin-left: 1.5rem;
+    background: skyblue;
+}
+
+.question-title {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+#options {
+    display: flex;
+    flex-direction: column;
+}
+
+input[type = "radio"] {
+    margin-right: 1rem;
+}
+
+.option-label {
+    font-size: 2rem;
+    margin: 1rem 0;
+    max-width: max-content;
+}
+
+.green {
+    color: rgb(31, 243, 31);
+}
+
+.red {
+    color: rgb(255, 105, 105);
+}
